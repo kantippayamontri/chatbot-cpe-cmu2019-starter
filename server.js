@@ -57,19 +57,14 @@ app.post('/webhook', middleware(config), (req, res) => {
               },
               "actions": [
                   {
-                    "type": "postback",
-                    "label": "Buy",
-                    "data": "action=buy&itemid=123"
+                    "type": "uri",
+                    "label": "facebook",
+                    "uri": "https://www.facebook.com/kan.tippayamontree"
                   },
                   {
                     "type": "message",
-                    "label": "Add to cart",
-                    "text": "no no no"
-                  },
-                  {
-                    "type": "uri",
-                    "label": "View detail",
-                    "uri": "http://google.com"
+                    "label": "Computer Engineering",
+                    "text": "!!! CPE CMU !!!"
                   }
               ]
           }
