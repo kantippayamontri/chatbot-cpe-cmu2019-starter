@@ -1,5 +1,6 @@
 const express = require('express')
 const middleware = require('@line/bot-sdk').middleware
+const Client = require('@line/bot-sdk').Client;
 const app = express()
 
 const config = {
@@ -7,9 +8,18 @@ const config = {
   channelSecret: '99854f6e3ac0a9d90b5313247821f18a'
 }
 
+const client = new Client(config);
 
 app.get('/', function (req, res) {
     res.send('Hello World!!')
+    const event = req.body.events[0];
+    if (event.type === 'message') {  
+      const message = event.message;  
+      client.replyMessage(event.replyToken, {
+        type: 'text',
+        text: 'I cannot leave a 1-on-1 chat!',
+      });
+    }
 })
 
 app.post('/webhook', middleware(config), (req, res) => {
