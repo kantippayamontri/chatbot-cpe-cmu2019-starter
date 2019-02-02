@@ -26,14 +26,9 @@ app.post('/webhook', middleware(config), (req, res) => {
         console.log(message)
         client.replyMessage(event.replyToken, {
           type: 'text',
-          text: "This is text",
+          text: message.type,
         });
-      }else if(event.type == 'sticker'){
-        const message = event.message;
-        client.replyMessage(event.replyToken, {
-          type: 'text',
-          text: "This is sticker",
-        });
+      }
         
       }
 
