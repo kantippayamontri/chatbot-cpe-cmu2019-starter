@@ -29,8 +29,6 @@ app.post('/webhook', middleware(config), (req, res) => {
           text: message.type,
         });
       }
-        
-      }
 
 })
 
