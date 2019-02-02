@@ -44,12 +44,12 @@ app.post('/webhook', middleware(config), (req, res) => {
           "altText": "This is a buttons template",
           "template": {
               "type": "buttons",
-              "thumbnailImageUrl": "https://vignette.wikia.nocookie.net/line/images/b/bb/2015-brown.png/revision/latest?cb=20150808131630",
+              "thumbnailImageUrl": "http://i68.tinypic.com/1dyff9.jpg",
               "imageAspectRatio": "rectangle",
               "imageSize": "cover",
               "imageBackgroundColor": "#FFFFFF",
-              "title": "Menu",
-              "text": "เลือกฉันสิจ้ะ",
+              "title": "First",
+              "text": "Kan Tippayamontri 590610602",
               "defaultAction": {
                   "type": "uri",
                   "label": "View detail",
