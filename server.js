@@ -19,7 +19,7 @@ app.post('/webhook', middleware(config), (req, res) => {
   /*req.body.events // webhook event objects
   req.body.destination // user ID of the bot (optional)*/
   res.send('Webhook success')
-  console.log(message)
+  //console.log(message)
   const event = req.body.events[0];
       if (event.type === 'message') {  
         const message = event.message;  
