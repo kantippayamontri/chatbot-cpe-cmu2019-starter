@@ -21,8 +21,8 @@ app.post('/webhook', middleware(config), (req, res) => {
   res.send('Webhook success')
   
   const event = req.body.events[0];
+  const message = event.message;  
       if (event.type === 'message') {  
-         const message = event.message;  
         console.log(message)
         if(message.type == "text"){
         client.replyMessage(event.replyToken, {
@@ -37,6 +37,7 @@ app.post('/webhook', middleware(config), (req, res) => {
         });
 
       }
+
       }
 
 })
