@@ -47,7 +47,7 @@ app.post('/webhook', middleware(config), (req, res) => {
               "thumbnailImageUrl": "https://vignette.wikia.nocookie.net/logopedia/images/a/a8/Marvel-logo.png/revision/latest/scale-to-width-down/640?cb=20140701230531",
               "imageAspectRatio": "rectangle",
               "imageSize": "cover",
-              "imageBackgroundColor": "#FFFFFF",
+              "imageBackgroundColor": "#f45342",
               "title": "First",
               "text": "Kan Tippayamontri 590610602",
               "defaultAction": {
@@ -62,9 +62,9 @@ app.post('/webhook', middleware(config), (req, res) => {
                     "uri": "https://www.facebook.com/kan.tippayamontree"
                   },
                   {
-                    "type": "message",
+                    "type": "uri",
                     "label": "Computer Engineering",
-                    "text": "!!! CPE CMU !!!"
+                    "uri": "http://cpe.eng.cmu.ac.th/2013/"
                   }
               ]
           }
