@@ -49,7 +49,7 @@ app.post('/webhook', middleware(config), (req, res) => {
               "imageSize": "cover",
               "imageBackgroundColor": "#FFFFFF",
               "title": "Menu",
-              "text": "Please select",
+              "text": "เลือกฉันสิจ้ะ",
               "defaultAction": {
                   "type": "uri",
                   "label": "View detail",
